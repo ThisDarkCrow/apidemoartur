@@ -28,7 +28,7 @@ public class ClienteController {
     }
 
     @PostMapping
-    public Cliente saveEmpleado(@RequestBody Cliente cliente){
+    public Cliente saveCliente(@RequestBody Cliente cliente){
         return this.clienteService.saveCliente(cliente);
     }
 
@@ -38,7 +38,7 @@ public class ClienteController {
     }
 
     @PutMapping(path = "/{id}")
-    public Cliente updateEmpleadoById(@RequestBody Cliente clienteModificado, @PathVariable("id") Long id){
+    public Cliente updateClienteById(@RequestBody Cliente clienteModificado, @PathVariable("id") Long id){
         return this.clienteService.updateClienteById(clienteModificado, id);
     }
 
