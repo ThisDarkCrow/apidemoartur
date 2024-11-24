@@ -12,7 +12,6 @@ import lombok.Setter;
 @Table(name="Clientes")
 public class Cliente {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Getter
